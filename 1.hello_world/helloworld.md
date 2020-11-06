@@ -17,3 +17,9 @@ The name of the package at the top of the file determines whether or not you are
 In main.go the package name is 'main'. When we built main.go it created the main executable. This is a reserved name and how we make executable. NB it must aslo have a func main() in the file.
 
 Any other name will create a reusable package.
+
+## Organisation
+
+1. package statement
+2. import statements
+3. code
