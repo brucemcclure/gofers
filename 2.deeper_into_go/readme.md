@@ -55,3 +55,15 @@ This is a further explanation of the receiver. The "d" is the reference to the w
 ### Getting rid of extra variables like "i" or "j" in for loops
 
 Go doesnt let you compile / run your file if you have unused variables. This means that You will either have to use them or get rid of them. To get rid of them all you need to do is replace them with a "\_". This means communicates to Go that you acknoledge that there is meant to be a variable there but we dont have a use for it.
+
+---
+
+### Slices
+
+Like Python Go has an index system for arrays and slices. Starting at zero and then the last index. Therefore you can access the second element of the slice with `name_of_slice[1]`
+
+![](./docs/slices1.png)
+
+To access a range of elements in a slice work as the below diagram. The first number refers to the first element that will be included in the range _Inclusive_. The last element is the stopping point of the range ie. it is up to this point but not including it _up to but not including_
+
+![](./docs/slices2.png)
