@@ -52,6 +52,6 @@ This is a further explanation of the receiver. The "d" is the reference to the w
 
 ![](./docs/receiver3.png)
 
-### Explaining the Go approach
+### Getting rid of extra variables like "i" or "j" in for loops
 
-test
+Go doesnt let you compile / run your file if you have unused variables. This means that You will either have to use them or get rid of them. To get rid of them all you need to do is replace them with a "\_". This means communicates to Go that you acknoledge that there is meant to be a variable there but we dont have a use for it.
