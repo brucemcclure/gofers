@@ -66,4 +66,9 @@ Like Python Go has an index system for arrays and slices. Starting at zero and t
 
 To access a range of elements in a slice work as the below diagram. The first number refers to the first element that will be included in the range _Inclusive_. The last element is the stopping point of the range ie. it is up to this point but not including it _up to but not including_
 
+Shorthand:
+
+- `fruits[:3]` This means from the very beginning of the slice to the 3rd element
+- `fruits[3:]` This means from the 3rd element of the slice to the very end
+
 ![](./docs/slices2.png)
