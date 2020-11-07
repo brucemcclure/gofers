@@ -53,3 +53,5 @@ This is a further explanation of the receiver. The "d" is the reference to the w
 ![](./docs/receiver3.png)
 
 ### Explaining the Go approach
+
+test
