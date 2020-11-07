@@ -94,3 +94,15 @@ This package allows us to write to a new or existing file on our HD.
 `filename string` refers to the name of the file we will be writing to. Sype string
 `data []byte` refers to raw data we want to save. A slice of bytes.
 `perm` what permissions should we use to create this file if we need to create it
+
+### What is a byte slice?!
+
+A byte slice is an ascii representation of the values of the string/int. It is a more "computer friendly" way of communicating data. However we cannt do this by hand we will probably need a hand converting the data to a byte slice.
+
+![](./docs/byte_slice.png)
+
+### Type conversion with Go
+
+There is an inbuilt function called `[]byte` which will convert data to a byte slice. However this function takes string. Therefore we will change the data to one string and then convert that string to a byte slice.
+
+s
