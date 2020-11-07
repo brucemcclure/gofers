@@ -5,6 +5,6 @@ func main() {
 	cards := newDeck()
 	// cards = append(cards, "This is a new element")
 
-	cards.print()
+	deal(cards, 5)
 
 }

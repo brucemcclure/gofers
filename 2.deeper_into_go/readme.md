@@ -78,3 +78,7 @@ Shorthand:
 Functions can have multiple return values. Remember to declare both return types in the fuction definition and then also have both return values separated by a comma.
 
 ![](./docs/return_value2.png)
+
+When a multiple return function is called it returns multiple values which means we need to assign them. The blow example is done simultaniously.
+
+![](./docs/multiple_assignment2.png)
