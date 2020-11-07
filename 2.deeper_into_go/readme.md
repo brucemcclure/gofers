@@ -82,3 +82,15 @@ Functions can have multiple return values. Remember to declare both return types
 When a multiple return function is called it returns multiple values which means we need to assign them. The blow example is done simultaniously.
 
 ![](./docs/multiple_assignment2.png)
+
+---
+
+### Working with the ioutil package
+
+This package allows us to write to a new or existing file on our HD.
+
+`func WriteFile(filename string, data []byte, perm os.FileMode) error`
+
+`filename string` refers to the name of the file we will be writing to. Sype string
+`data []byte` refers to raw data we want to save. A slice of bytes.
+`perm` what permissions should we use to create this file if we need to create it
