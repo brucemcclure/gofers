@@ -1,17 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	// var card string = "Ace of Spades"
-	cards := []string{"Ace of diamonds", newCard()}
+	cards := deck{"Ace of diamonds", newCard()}
 	cards = append(cards, "This is a new element")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 }
 
