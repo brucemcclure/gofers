@@ -27,3 +27,12 @@ func (d deck) print() {
 		fmt.Println(card)
 	}
 }
+
+// This means we can call the deal function with:
+// First agument of type deck, second argument of type int
+// We cannot call the deal function with any other type of function.
+// If we had fmt.Println(d) it will print out the entire deck "object"
+//  This returns two values of type deck
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}

@@ -72,3 +72,9 @@ Shorthand:
 - `fruits[3:]` This means from the 3rd element of the slice to the very end
 
 ![](./docs/slices2.png)
+
+### Multiple returns
+
+Functions can have multiple return values. Remember to declare both return types in the fuction definition and then also have both return values separated by a comma.
+
+![](./docs/return_value2.png)
