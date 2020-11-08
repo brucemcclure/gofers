@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"strings"
 )
 
@@ -43,5 +44,10 @@ func deal(d deck, handSize int) (deck, deck) {
 func (d deck) toString() string {
 	// This takes a slice of strings and converts it to one string
 	return strings.Join([]string(d), ",")
+}
 
+// Convert the string to byte slice and convert it to a file
+
+func (d deck) saveToFile(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
 }
