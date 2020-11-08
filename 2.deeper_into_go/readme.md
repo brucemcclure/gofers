@@ -105,4 +105,6 @@ A byte slice is an ascii representation of the values of the string/int. It is a
 
 There is an inbuilt function called `[]byte` which will convert data to a byte slice. However this function takes string. Therefore we will change the data to one string and then convert that string to a byte slice.
 
-s
+We will be converting an instance of the deck type to one single string. This is possible becasue the deck type was origonally just an extension of the slice type that contained only strings. We will use the func Join method to do this, this is part of the stings package.
+
+`func Join(elems []string, sep string) string`
