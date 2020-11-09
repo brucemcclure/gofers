@@ -116,3 +116,17 @@ We will be converting an instance of the deck type to one single string. This is
 There is a specific error type in Go. If you coupled this with the previously multiple assignment then you get an elegent line of code like below. Once could immediately move onto control flow based on the error afterwards.
 
 `bs, err := ioutil.ReadFile(filename)`
+
+### The 'os' package
+
+This is a package that gives us access to the underlying os. It will work equally well on any os. The exit function exits the program. Pass in an exit code to show that something went wrong.
+
+### More on strings, the Split function
+
+This will convert one long string separated by commas into a slice of elements.
+
+`s := strings.Split(string(bs), ",")`
+
+### Type conversion to a 'custom type'
+
+Type conversion is pretty straight forward. When we create a custom type we are extending the base type of a slice of strings for example. Therefore we can convert any slice of strings to our custom type because they are effectively the same thing already.
