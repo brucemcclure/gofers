@@ -153,3 +153,5 @@ To make a new test we create a file called xyz_test.go. To run all the tests in 
 Every file that is part of a package must include the name of the package it belongs to, including tests. In this case all the files are a part of 'main'. Because we have the \_test.go attached to our file name and we have told Go which package it belongs to we have access to two tabs in vs code called `run package tests` and `run file tests`.
 
 Each function written in the test file must start with a capital letter and takes two default arguments `TestNewDeck(t *testing.T)`. Within the test function we can literally just call the fucntion we are testing and then check the result with a conditional. if there is an error we let Go know about it like so `t.Errorf("Expected deck length of 20, but got %v", len(d))`. The %v is an example of string interpolation.
+
+![](./docs/more_tests.png)
