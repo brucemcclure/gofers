@@ -130,3 +130,14 @@ This will convert one long string separated by commas into a slice of elements.
 ### Type conversion to a 'custom type'
 
 Type conversion is pretty straight forward. When we create a custom type we are extending the base type of a slice of strings for example. Therefore we can convert any slice of strings to our custom type because they are effectively the same thing already.
+
+---
+
+### Random numbers
+
+Found in the random package. math/rand. In order to generate a random order you could combine this package with the multiple assignment feature previously discussed.
+`d[i], d[newPosition] = d[newPosition], d[i]`.
+
+The problem is we need to generate a new seed source. This is the source of Golangs random function. We will be using the current time to provide us with a new number. Then we will create a new instance of random which uses time as the seed. There after use `r.Intn` to generate the random number.
+
+![](./docs/random.png)
