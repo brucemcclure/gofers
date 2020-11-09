@@ -5,3 +5,11 @@ For now struts can be thought of as `{ hash: ruby, dict: python, object: js }` T
 ![](./docs/strut.png)
 
 ![](./docs/basic_strut_code.png)
+
+### Updating strut values
+
+### Go zero values
+
+Zero values are provided by default when creating a new object of a strut but you dont provide it with any values. ie `var bruce person`. The zero values provided are dependent of the ype of data that the strut holds. As the table below shows.
+
+![](./docs/zero_values.png)

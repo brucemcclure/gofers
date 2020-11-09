@@ -10,6 +10,8 @@ type person struct {
 
 func main() {
 	// bruce := person{"Bruce", "McClure"} // This relys 100% on the order for assignemnt
-	bruce := person{firstName: "Bruce", lastName: "McClure"} // This doesn't rely on order
+	// bruce := person{firstName: "Bruce", lastName: "McClure"} // This doesn't rely on order
+	var bruce person
+
 	fmt.Println(bruce)
 }
