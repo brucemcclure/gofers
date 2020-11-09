@@ -2,17 +2,26 @@ package main
 
 import "fmt"
 
+type contactInfo struct {
+	email string
+	code  int
+}
+
 // This is the definition of what a person is.
 type person struct {
 	firstName string
 	lastName  string
+	contact   contactInfo
 }
 
 func main() {
-	// bruce := person{"Bruce", "McClure"} // This relys 100% on the order for assignemnt
-	// bruce := person{firstName: "Bruce", lastName: "McClure"} // This doesn't rely on order
-	var bruce person
-	bruce.firstName = "Bruce"
-	bruce.lastName = "McClure"
+	bruce := person{
+		firstName: "Bruce",
+		lastName:  "McClure",
+		contact: contactInfo{
+			email: "bruce@gmail.com",
+			code:  2088,
+		},
+	}
 	fmt.Printf("%+v", bruce)
 }
