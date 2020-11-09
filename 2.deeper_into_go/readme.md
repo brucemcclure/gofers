@@ -108,3 +108,11 @@ There is an inbuilt function called `[]byte` which will convert data to a byte s
 We will be converting an instance of the deck type to one single string. This is possible becasue the deck type was origonally just an extension of the slice type that contained only strings. We will use the func Join method to do this, this is part of the stings package.
 
 `func Join(elems []string, sep string) string`
+
+---
+
+### The error type
+
+There is a specific error type in Go. If you coupled this with the previously multiple assignment then you get an elegent line of code like below. Once could immediately move onto control flow based on the error afterwards.
+
+`bs, err := ioutil.ReadFile(filename)`
