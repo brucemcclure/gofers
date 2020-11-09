@@ -141,3 +141,13 @@ Found in the random package. math/rand. In order to generate a random order you 
 The problem is we need to generate a new seed source. This is the source of Golangs random function. We will be using the current time to provide us with a new number. Then we will create a new instance of random which uses time as the seed. There after use `r.Intn` to generate the random number.
 
 ![](./docs/random.png)
+
+---
+
+### Testing with Go
+
+Testing with Go is not anything like using RSpec, Mocha, Selenium etc. This may be the most different aspect other than oop.
+
+To make a new test we create a file called xyz_test.go. To run all the tests in a package run the command `go test`.
+
+Every file that is part of a package must include the name of the package it belongs to, including tests. In this case all the files are a part of 'main'. Because we have the \_test.go attached to our file name and we have told Go which package it belongs to we have access to two tabs in vs code called `run package tests` and `run file tests`.
